@@ -1,26 +1,70 @@
 {
-  "name": "react_wishlist",
+  "name": "react-wishlist",
   "version": "1.0.0",
-  "description": "react web application",
-  "main": "index.js",
+  "description": "An exercise for an introduction to React",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./src/index.html --open",
+    "lint": "eslint --fix src/**/*.{js,jsx}",
+    "format": "prettier --write \"*.{js,jsx,json,css}\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SusanaSantosMoreno/curso_react_wishlist.git"
-  },
+  "keywords": [
+    "parcel",
+    "react"
+  ],
   "author": "Susana Santos Moreno",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SusanaSantosMoreno/curso_react_wishlist/issues"
-  },
-  "homepage": "https://github.com/SusanaSantosMoreno/curso_react_wishlist#readme",
+  "license": "MIT",
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "npm run lint"
+    ],
+    "src/**/*.{js,jsx,json,css,scss}": [
+      "prettier --write"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "linebreak-style": "off",
+      "jsx-a11y/label-has-for": [
+        2,
+        {
+          "components": [
+            "Label"
+          ],
+          "required": {
+            "some": [
+              "nesting",
+              "id"
+            ]
+          },
+          "allowChildren": false
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
   }
 }
