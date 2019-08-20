@@ -1,0 +1,26 @@
+{
+  "name": "react_wishlist",
+  "version": "1.0.0",
+  "description": "react web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SusanaSantosMoreno/curso_react_wishlist.git"
+  },
+  "author": "Susana Santos Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SusanaSantosMoreno/curso_react_wishlist/issues"
+  },
+  "homepage": "https://github.com/SusanaSantosMoreno/curso_react_wishlist#readme",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
