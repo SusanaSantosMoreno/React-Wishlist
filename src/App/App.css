@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body, html { 
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+    width: 400px;
+    margin: auto;
+    max-width: 100%;
+    padding: 0 2rem 2rem 2rem;
+    margin-top: 2rem;
+}
+
+.wish-list {
+    list-style: none;
+    padding: 0;
+}
+
+.wish-list_item--done label {
+    text-decoration: line-through;
+}
+
+.title {
+    margin-top: 5%;
+}
