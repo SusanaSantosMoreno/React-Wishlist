@@ -28,3 +28,11 @@ body, html {
 .title {
     margin-top: 5%;
 }
+
+.wish-list-item--warning {
+    color: orange;
+}
+
+.wish-list-item--danger{
+    color: red;
+}
